@@ -20,6 +20,10 @@ The output is HIGH only when both inputs are HIGH.
 * `and_gate.v` — Verilog design
 * `and_gate_tb.v` — Testbench
 
+## Simulation Waveform
+
+![AND Gate Waveform](waveform.png)
+
 ## Tools
 
 * Verilog HDL
