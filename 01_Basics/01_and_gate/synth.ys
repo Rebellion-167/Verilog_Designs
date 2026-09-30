@@ -1,0 +1,5 @@
+read_verilog and_gate.v
+hierarchy -top and_gate
+proc
+opt
+show
