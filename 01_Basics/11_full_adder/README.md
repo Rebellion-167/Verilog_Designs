@@ -30,6 +30,10 @@ The three inputs are **A**, **B**, and **Cin (Carry In)**.
 * `full_adder_tb.v` — Testbench
 * `full_adder.vcd` — Simulation waveform
 
+## Logic Schematic
+
+![Full Adder Schematic](full_adder.svg)
+
 ## Simulation Waveform
 
 ![Full Adder Waveform](waveform.png)

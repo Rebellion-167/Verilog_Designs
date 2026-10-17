@@ -24,6 +24,10 @@ A Half Adder is a combinational digital circuit that adds two 1-bit binary numbe
 * `half_adder_tb.v` — Testbench
 * `half_adder.vcd` — Simulation waveform
 
+## Logic Schematic
+
+![Half Adder Schematic](half_adder.svg)
+
 ## Simulation Waveform
 
 ![Half Adder Waveform](waveform.png)

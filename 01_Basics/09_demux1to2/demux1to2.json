@@ -1,0 +1,112 @@
+{
+  "creator": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "modules": {
+    "demux1to2": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "demux1to2.v:1.1-9.10"
+      },
+      "ports": {
+        "d": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "sel": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 4, 5 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:38:simplemap_not$81": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "demux1to2.v:7.20-7.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$auto$simplemap.cc:83:simplemap_bitop$82": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "demux1to2.v:7.16-7.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 6 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$auto$simplemap.cc:83:simplemap_bitop$83": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "demux1to2.v:8.16-8.23"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "$not$demux1to2.v:7$1_Y": {
+          "hide_name": 1,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "demux1to2.v:7.20-7.24"
+          }
+        },
+        "d": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "demux1to2.v:2.8-2.9"
+          }
+        },
+        "sel": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "demux1to2.v:3.8-3.11"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 4, 5 ],
+          "attributes": {
+            "src": "demux1to2.v:4.15-4.16"
+          }
+        }
+      }
+    }
+  }
+}

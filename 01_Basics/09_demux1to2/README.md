@@ -18,6 +18,10 @@ The select line determines which output receives the input.
 * `demux1to2.v` — Verilog design
 * `demux1to2_tb.v` — Testbench
 
+## Logic Schematic
+
+![1:2 Demultiplexer Schematic](demux1to2.svg)
+
 ## Simulation Waveform
 
 ![1:2 Demux Waveform](waveform.png)
