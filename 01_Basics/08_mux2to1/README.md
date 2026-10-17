@@ -18,6 +18,10 @@ The select line determines which input is passed to the output.
 * `mux2to1.v` — Verilog design
 * `mux2to1_tb.v` — Testbench
 
+## Logic Schematic
+
+![2-to-1 MUX Schematic](mux2to1.svg)
+
 ## Simulation Waveform
 
 ![2:1 MUX Waveform](waveform.png)
