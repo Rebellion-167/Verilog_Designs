@@ -1,0 +1,77 @@
+{
+  "creator": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "modules": {
+    "encoder_4to2": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "encoder_4to2.v:1.1-9.10"
+      },
+      "ports": {
+        "in": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 6, 7 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:83:simplemap_bitop$80": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "encoder_4to2.v:6.16-6.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 4 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:83:simplemap_bitop$81": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "encoder_4to2.v:7.16-7.29"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 5 ],
+            "Y": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "in": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "encoder_4to2.v:2.14-2.16"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 6, 7 ],
+          "attributes": {
+            "src": "encoder_4to2.v:3.15-3.16"
+          }
+        }
+      }
+    }
+  }
+}
