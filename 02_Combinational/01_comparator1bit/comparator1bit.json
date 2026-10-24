@@ -1,0 +1,177 @@
+{
+  "creator": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "modules": {
+    "comparator1bit": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "comparator1bit.v:1.1-13.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "b": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "a_gt_b": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "a_lt_b": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "a_eq_b": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$auto$simplemap.cc:38:simplemap_not$83": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "comparator1bit.v:9.22-9.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$auto$simplemap.cc:38:simplemap_not$85": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "comparator1bit.v:10.18-10.20"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$simplemap.cc:83:simplemap_bitop$84": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "comparator1bit.v:9.18-9.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 7 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$auto$simplemap.cc:83:simplemap_bitop$86": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "comparator1bit.v:10.18-10.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 8 ],
+            "B": [ 3 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$auto$simplemap.cc:83:simplemap_bitop$87": {
+          "hide_name": 1,
+          "type": "$_XNOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "comparator1bit.v:11.18-11.24"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "$not$comparator1bit.v:10$3_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "comparator1bit.v:10.18-10.20"
+          }
+        },
+        "$not$comparator1bit.v:9$1_Y": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "comparator1bit.v:9.22-9.24"
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "comparator1bit.v:2.8-2.9"
+          }
+        },
+        "a_eq_b": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "comparator1bit.v:6.9-6.15"
+          }
+        },
+        "a_gt_b": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "comparator1bit.v:4.9-4.15"
+          }
+        },
+        "a_lt_b": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "comparator1bit.v:5.9-5.15"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "comparator1bit.v:3.8-3.9"
+          }
+        }
+      }
+    }
+  }
+}
