@@ -14,45 +14,44 @@ The comparator has two 4-bit inputs (`A[3:0]`, `B[3:0]`) and three outputs:
 - `A_lt_B`: HIGH when A is less than B.
 - `A_eq_B`: HIGH when A is equal to B.
 
-### Boolean Expressions
+## Boolean Expressions
 
-First, define the equality terms using XNOR gates:
+Let the equality terms be:
 
-\[
-E_i = A_i \odot B_i,\quad i=0,1,2,3
-\]
-
-Here, \(\odot\) represents the XNOR operation.
+- `E3 = A3 XNOR B3`
+- `E2 = A2 XNOR B2`
+- `E1 = A1 XNOR B1`
+- `E0 = A0 XNOR B0`
 
 **1. Greater Than (A > B)**
 
-\[
-\begin{aligned}
-A\_gt\_B ={}& A_3\overline{B_3}\\
-&+ E_3 A_2\overline{B_2}\\
-&+ E_3E_2 A_1\overline{B_1}\\
-&+ E_3E_2E_1 A_0\overline{B_0}
-\end{aligned}
-\]
+```text
+A_gt_B = (A3 AND NOT B3)
+       OR (E3 AND A2 AND NOT B2)
+       OR (E3 AND E2 AND A1 AND NOT B1)
+       OR (E3 AND E2 AND E1 AND A0 AND NOT B0)
+```
 
 **2. Less Than (A < B)**
 
-\[
-\begin{aligned}
-A\_lt\_B ={}& \overline{A_3}B_3\\
-&+ E_3\overline{A_2}B_2\\
-&+ E_3E_2\overline{A_1}B_1\\
-&+ E_3E_2E_1\overline{A_0}B_0
-\end{aligned}
-\]
+```text
+A_lt_B = (NOT A3 AND B3)
+       OR (E3 AND NOT A2 AND B2)
+       OR (E3 AND E2 AND NOT A1 AND B1)
+       OR (E3 AND E2 AND E1 AND NOT A0 AND B0)
+```
 
 **3. Equal To (A = B)**
 
-\[
-A\_eq\_B = E_3E_2E_1E_0
-\]
+```text
+A_eq_B = E3 AND E2 AND E1 AND E0
+```
 
-Here, \(+\) represents OR, multiplication represents AND, and the overbar represents NOT.
+Here:
+- `AND` represents logical AND.
+- `OR` represents logical OR.
+- `NOT` represents logical inversion.
+- `XNOR` outputs 1 when both inputs are equal.
 
 ### Gate-Level Implementation
 
