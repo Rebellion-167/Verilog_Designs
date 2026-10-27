@@ -1,0 +1,111 @@
+{
+  "creator": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "modules": {
+    "binary_to_gray": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "binary_to_gray.v:1.1-11.10"
+      },
+      "ports": {
+        "binary": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "gray": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 5 ]
+        }
+      },
+      "cells": {
+        "$xor$binary_to_gray.v:7$1": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "binary_to_gray.v:7.19-7.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 4 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$xor$binary_to_gray.v:8$2": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "binary_to_gray.v:8.19-8.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 3 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$xor$binary_to_gray.v:9$3": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": "00000000000000000000000000000000",
+            "A_WIDTH": "00000000000000000000000000000001",
+            "B_SIGNED": "00000000000000000000000000000000",
+            "B_WIDTH": "00000000000000000000000000000001",
+            "Y_WIDTH": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "src": "binary_to_gray.v:9.19-9.40"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "binary": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "binary_to_gray.v:2.14-2.20"
+          }
+        },
+        "gray": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 5 ],
+          "attributes": {
+            "src": "binary_to_gray.v:3.15-3.19"
+          }
+        }
+      }
+    }
+  }
+}
