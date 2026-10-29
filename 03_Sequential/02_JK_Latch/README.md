@@ -20,7 +20,7 @@ Here, X represents a don't-care condition, and Q represents the current output s
 ## Schematic
 The logic schematic can be generated using Yosys and Graphviz.
 
-![JK Latch Schematic](jk_latch.png)
+![JK Latch Schematic](jk_latch.svg)
 
 ## Files
 - `jk_latch.v` — Verilog module implementing the JK latch.
