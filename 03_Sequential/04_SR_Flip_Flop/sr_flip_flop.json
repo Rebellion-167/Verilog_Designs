@@ -1,0 +1,188 @@
+{
+  "creator": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "modules": {
+    "sr_flip_flop": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "sr_flip_flop.v:1.1-28.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "s": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "r": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "qbar": {
+          "direction": "output",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+        "$abc$115$auto$blifparse.cc:396:parse_blif$116": {
+          "hide_name": 1,
+          "type": "$_ORNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 3 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$115$auto$blifparse.cc:396:parse_blif$117": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 3 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$abc$115$auto$blifparse.cc:396:parse_blif$118": {
+          "hide_name": 1,
+          "type": "$_ANDNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$108": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "sr_flip_flop.v:7.2-26.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 7 ],
+            "E": [ 8 ],
+            "Q": [ 6 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$112": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "sr_flip_flop.v:7.2-26.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 9 ],
+            "E": [ 8 ],
+            "Q": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\q[0:0]": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "sr_flip_flop.v:7.2-26.5"
+          }
+        },
+        "$0\\qbar[0:0]": {
+          "hide_name": 1,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "sr_flip_flop.v:7.2-26.5"
+          }
+        },
+        "$abc$115$auto$simplemap.cc:166:logic_reduce$109": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "sr_flip_flop.v:2.8-2.11"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "sr_flip_flop.v:4.13-4.14"
+          }
+        },
+        "qbar": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "sr_flip_flop.v:4.16-4.20"
+          }
+        },
+        "r": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "sr_flip_flop.v:3.11-3.12"
+          }
+        },
+        "s": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "sr_flip_flop.v:3.8-3.9"
+          }
+        }
+      }
+    }
+  }
+}
