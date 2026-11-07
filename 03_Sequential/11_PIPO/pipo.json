@@ -1,0 +1,279 @@
+{
+  "creator": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "modules": {
+    "pipo": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "pipo.v:1.1-18.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "load": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "p_in": {
+          "direction": "input",
+          "bits": [ 5, 6, 7, 8 ]
+        },
+        "p_out": {
+          "direction": "output",
+          "bits": [ 9, 10, 11, 12 ]
+        }
+      },
+      "cells": {
+        "$abc$114$auto$blifparse.cc:396:parse_blif$115": {
+          "hide_name": 1,
+          "type": "$_NOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 4 ],
+            "Y": [ 13 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$104": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "pipo.v:9.2-16.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 14 ],
+            "E": [ 13 ],
+            "Q": [ 9 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$105": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "pipo.v:9.2-16.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 15 ],
+            "E": [ 13 ],
+            "Q": [ 10 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$106": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "pipo.v:9.2-16.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 16 ],
+            "E": [ 13 ],
+            "Q": [ 11 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$107": {
+          "hide_name": 1,
+          "type": "$_DFFE_PP_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "pipo.v:9.2-16.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 17 ],
+            "E": [ 13 ],
+            "Q": [ 12 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$108": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "pipo.v:9.2-16.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 5 ],
+            "E": [ 4 ],
+            "Q": [ 14 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$109": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "pipo.v:9.2-16.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 6 ],
+            "E": [ 4 ],
+            "Q": [ 15 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$110": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "pipo.v:9.2-16.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 7 ],
+            "E": [ 4 ],
+            "Q": [ 16 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$111": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "pipo.v:9.2-16.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "E": [ 4 ],
+            "Q": [ 17 ],
+            "R": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$114$auto$opt_dff.cc:219:make_patterns_logic$23": {
+          "hide_name": 1,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "pipo.v:2.8-2.11"
+          }
+        },
+        "load": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "pipo.v:2.18-2.22"
+          }
+        },
+        "p_in": {
+          "hide_name": 0,
+          "bits": [ 5, 6, 7, 8 ],
+          "attributes": {
+            "src": "pipo.v:3.14-3.18"
+          }
+        },
+        "p_out": {
+          "hide_name": 0,
+          "bits": [ 9, 10, 11, 12 ],
+          "attributes": {
+            "src": "pipo.v:4.19-4.24"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "pipo.v:2.13-2.16"
+          }
+        },
+        "temp": {
+          "hide_name": 0,
+          "bits": [ 14, 15, 16, 17 ],
+          "attributes": {
+            "src": "pipo.v:7.12-7.16"
+          }
+        }
+      }
+    }
+  }
+}
