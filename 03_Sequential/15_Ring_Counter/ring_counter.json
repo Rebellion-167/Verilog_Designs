@@ -1,0 +1,134 @@
+{
+  "creator": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "modules": {
+    "ring_counter": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "ring_counter.v:1.1-13.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 4, 5, 6, 7 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$84": {
+          "hide_name": 1,
+          "type": "$_SDFF_PP1_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "ring_counter.v:6.2-11.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 7 ],
+            "Q": [ 4 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$85": {
+          "hide_name": 1,
+          "type": "$_SDFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "ring_counter.v:6.2-11.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 4 ],
+            "Q": [ 5 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$86": {
+          "hide_name": 1,
+          "type": "$_SDFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "ring_counter.v:6.2-11.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 5 ],
+            "Q": [ 6 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$87": {
+          "hide_name": 1,
+          "type": "$_SDFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "ring_counter.v:6.2-11.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 6 ],
+            "Q": [ 7 ],
+            "R": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "ring_counter.v:2.8-2.11"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7 ],
+          "attributes": {
+            "src": "ring_counter.v:3.19-3.20"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "ring_counter.v:2.13-2.16"
+          }
+        }
+      }
+    }
+  }
+}
