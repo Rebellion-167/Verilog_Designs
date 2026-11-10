@@ -1,0 +1,157 @@
+{
+  "creator": "Yosys 0.52 (git sha1 fee39a3284c90249e1d9684cf6944ffbbcbb8f90)",
+  "modules": {
+    "johnson_counter": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "johnson_counter.v:1.1-13.10"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "rst": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "q": {
+          "direction": "output",
+          "bits": [ 4, 5, 6, 7 ]
+        }
+      },
+      "cells": {
+        "$abc$90$auto$blifparse.cc:396:parse_blif$91": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 7 ],
+            "Y": [ 8 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$86": {
+          "hide_name": 1,
+          "type": "$_SDFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "johnson_counter.v:6.2-11.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 8 ],
+            "Q": [ 4 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$87": {
+          "hide_name": 1,
+          "type": "$_SDFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "johnson_counter.v:6.2-11.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 4 ],
+            "Q": [ 5 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$88": {
+          "hide_name": 1,
+          "type": "$_SDFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "johnson_counter.v:6.2-11.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 5 ],
+            "Q": [ 6 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$89": {
+          "hide_name": 1,
+          "type": "$_SDFF_PP0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "johnson_counter.v:6.2-11.5"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 6 ],
+            "Q": [ 7 ],
+            "R": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$90$not$johnson_counter.v:10$2_Y": {
+          "hide_name": 1,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "johnson_counter.v:10.18-10.23"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "johnson_counter.v:2.8-2.11"
+          }
+        },
+        "q": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7 ],
+          "attributes": {
+            "src": "johnson_counter.v:3.19-3.20"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "johnson_counter.v:2.13-2.16"
+          }
+        }
+      }
+    }
+  }
+}
